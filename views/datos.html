@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ingresa</title>
+  <meta charset="UTF-8">
+  <link href="../assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  <link href="../assets/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!-- Fancybox  -->
+  <script type="text/javascript" src="../assets/javascripts/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="../assets/stylesheets/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="../assets/javascripts/jquery.fancybox.pack.js"></script>
+  <script src="../assets/javascripts/fancybox_simpleimage.js" type="text/javascript"></script>
+  <!-- Bootsrap --> 
+  <script src="../assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/javascripts/application.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="UGAb5QyVhlT+7W/EEOathk114a1bGFHgdlCubysNeEE=" name="csrf-token" />
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+  </style>
+  <script type = "text/javascript">
+  $(document).ready(function() {
+      /*
+       *  Simple image gallery. Uses default settings
+       */
+
+      $('.fancybox').fancybox();
+    });
+  </script>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="/" id="logo"></a>
+          <nav>
+            <ul class="nav pull-right">
+              <li><a href="about.html">Nuestra Empresa</a></li>
+              <li><a href="ingredientes.html">Ingredientes</a></li>
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="ingredientes" href="sanitizacion.html">Sanitización
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="sanitizacion.html#sonozaire">Sonozaire</a></li>
+                <li><a href="sanitizacion.html#cashido">Cashido</a></li>
+                <li><a href="sanitizacion.html#bacterias">Bacterias Fagocitarias</a></li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="servicios" href="alianzas.html">Alianzas Estratégicas
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li>
+                          <a href="http://www.vilher.com.mx" target="_blank">Empresas Vilher SA de CV</a>
+                      </li>
+                      <li>
+                          <a href="http://www.noverek.com.mx" target="_blank">Noverek SA de CV</a>
+                      </li>
+                      <li>
+                          <a href="http://www.gening.com.mx" target="_blank">Ingredientes especializados Gening</a>
+                      </li>
+                      <li>
+                          <a href="http://www.kapaingenieria.com" target="_blank">Kapa Ingeniería</a>
+                      </li>
+                      <li>
+                          <a href="http://www.ozono.mx" target="_blank">Ozono Internacional</a>
+                      </li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="servicios" href="servicios.html">Servicios
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li>
+                          <a href="servicios.html#curso1">Cursos de capacitación ( Capacitador externo acreditado antes la STPS)</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso2">Curso Buenas prácticas de manufactura</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso3">Curso Taller de elaboración de productos cárnicos</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso4">Curso Manejo adecuado de la Carne</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso5">Curso Taller de  Agentes Texturizantes</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso6">Curso Norma ISO22000</a>
+                      </li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="ingredientes" href="industrial.html">Industrias
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                          <a href="views/industrial.html">Alimentos</a>
+                            <ul class="dropdown-menu1">
+                              <li><a href="industrial.html#carnicos">Cárnicos</a></li>
+                              <li><a href="industrial.html#lacteos">Lácteos</a></li>
+                              <li><a href="industrial.html#panificacion">Panificación</a></li>
+                              <li><a href="industrial.html#confiteria">Confitería</a></li>
+                            </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                          <a href="industrial.html#industrial">Industrial</a>
+                            <ul class="dropdown-menu1">
+                              <li><a href="industrial.html#ecoone">Eco-One</a></li>
+                              <li><a href="industrial.html#antiestaticos">Antiestáticos</a></li>
+                            </ul>
+                      </li>
+                  </div>
+              <li><a href="datos.html">Protección de Datos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <!-- Contenido -->
+	<div class="container">
+    <div class="datos">
+    <h1>Aviso de Privacidad</h1>
+    <p>En cumplimiento a lo previsto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (en lo sucesivo "la Ley"), nos permitimos informarle lo siguiente:</p>
+
+    <p>Ingresa , S.A. de C.V., (en lo sucesivo "Ingresa"), señalando como domicilio para efectos del presente aviso de privacidad, el ubicado en Zarzamora 434, Col. Coyoacán, Monterrey, Nuevo León, Tel. 1933 1169, será el responsable de los datos personales (incluyendo datos sensibles) que le sean proporcionados por las personas físicas a quienes correspondan los datos personales, (en lo sucesivo "el Titular).</p>
+
+    <p>El tratamiento de los datos personales del Titular, que sean puestos a disposición de Ingresa bajo cualquier forma o medio, podrá ser efectuado de acuerdo a los términos y condiciones del presente aviso, por lo que desde este momento se entiende, que el Titular otorga su consentimiento para dicho tratamiento.</p>
+
+    <p>Para los fines señalados en el presente aviso de privacidad, podemos recabar los datos personales del Titular de distintas formas: Cuando el Titular los proporciona directamente; cuando visita nuestro sitio de Internet o utiliza nuestros servicios y cuando obtenemos información a través de otras fuentes que están permitidas por la Ley. La información de datos personales y/o datos sensibles, que sean proporcionados de manera directa por el Titular con su pleno consentimiento, tendrá el uso que en forma enunciativa pero no limitativa se describe a continuación:<p>
+
+        <ul>Identificarlo y ubicarlo;
+          <li>Para temas laborales (reclutamiento, contratación de personal, etc);</li>
+          <li>Proveer servicios y productos requeridos;</li>
+          <li>Informar sobre nuevos productos o servicios;</li>
+          <li>Dar cumplimiento a obligaciones contraídas con nuestros clientes y proveedores;</li>
+          <li>Informar sobre cambios de nuestros productos o servicios;</li>
+          <li>Evaluar la calidad del servicio, y</li>
+          <li>Para fines estadísticos</li>
+      </ul>
+
+    <p>El uso de los datos personales y/o datos sensibles, corresponderán al tipo de relación que el Titular establezca con Ingresa, ya sea como empleado, candidato para alguna vacante, cliente o proveedor de bienes y servicios.</p>
+
+    <p>Es responsabilidad del Titular, el garantizar que los datos proporcionados sean veraces y completos, y es responsable de comunicar a Ingresa, a través de los encargados del manejo de datos personales, cualquier modificación en dichos datos a efecto de que se pueda cumplir con la obligación de mantener la información actualizada.</p>
+
+    <p>La temporalidad del manejo por parte de Ingresa, de los datos personales del Titular, dependerá de la relación jurídica (comercial o laboral) que se tenga con Ingresa, así como de las obligaciones exigidas por la legislación vigente y las autoridades competentes.</p>
+
+    <p>La información que sea entregada a Ingresa será debidamente resguardada, conservada y protegida, con los medios tecnológicos y físicos adecuados, a efecto de que se impida su pérdida, mal uso, alteración, acceso no autorizado y robo. Sólo tendrán acceso a la información aquellas personas autorizadas por Ingresa, ya sean trabajadores, proveedores de productos o servicios, o socios de negocios, quienes han asumido el compromiso de mantener la información bajo un estricto orden de confidencialidad y seguridad; para ello los empleados firman un convenio de confidencialidad.</p>
+
+    <p>En caso de que los datos personales resguardados sean requeridos por una autoridad de cualquier índole, ya sea por proceso legal, para responder a cualquier reclamo o acciones legales, o para proteger los derechos de Ingresa o sus clientes y el público; estos datos se pondrán a su disposición dentro del estricto cumplimiento a la Ley.</p>
+
+    <p>Los Titulares tendrán derecho a solicitar el acceso, rectificación, cancelación u oposición de sus datos, mediante solicitud escrita dirigida a Ingresa , S.A. de C.V., al domicilio ubicado en Zarzamora 434, Col. Coyoacán, Monterrey, Nuevo León, Tel. 1933 1169, dentro del horario de 8:30 a 19:00 horas, en días hábiles.</p>
+
+    <p>Ingresa, dará respuesta a las solicitudes del Titular de la información, dentro del plazo establecido por la Ley, siempre y cuando no se actualice alguna de las excepciones contenidas en dicha Ley, y el solicitante cumpla con los requisitos contenidos en el artículo 29 de la Ley que se describen a continuación:</p>
+
+    <p>I. Señalar el nombre del Titular y domicilio u otro medio para comunicarle la respuesta a su solicitud;</p>
+
+    <p>II. Los documentos que acrediten la identidad o, en su caso, la representación legal del Titular;</p>
+
+    <p>III. La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos antes mencionados, y</p>
+
+    <p>IV. Cualquier otro elemento o documento que facilite la localización de los datos personales, es decir, a qué persona fueron proporcionados o área de la empresa a la que pertenece la persona a la que se proporcionaron los datos.</p>
+
+    <p>En el supuesto, de que Ingresa, requiera usar los datos personales y/o datos sensibles, con fines distintos a los pactados o convenidos al tenor de la relación jurídica (comercial y/o laboral) que se tiene con el Titular, se notificará al Titular en forma escrita, telefónica, electrónica, o por cualquier medio óptico, sonoro, visual u otro que la tecnología permita, explicando los nuevos usos que pretenda darle a dicha información a fin de recabar su autorización.</p>
+
+    <p>Con el presente Aviso de Privacidad, los Titulares de la información quedan debidamente informados de la finalidad con la que se recaban sus datos, aceptando los términos establecidos y que fueron elaborados en cumplimiento a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+
+    <p>Ingresa, se reserva el derecho a modificar el presente aviso, para adaptarlo a cambios legislativos así como a prácticas de la industria. En dichos supuestos, se anunciará por cualquier medio de dicha modificación. </p>
+  </div>
+  </div>
+  <footer>
+  <div>Ingresa Mexico
+    <p>Email:ventas@ingresa.com
+    Tel. 81 1933 1169 . Nextel: 81 1805 1926</p>
+  </div>
+  <div class="bandera">
+  <div class="linkedin">
+          <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: es_ES
+          </script>
+          <script type="IN/FollowCompany" data-id="3349242" data-counter="none"></script>
+      </div></div>
+</footer>
+</body>
+</html>

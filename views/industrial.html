@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ingresa</title>
+  <meta charset="UTF-8">
+  <link href="../assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  <link href="../assets/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!-- Fancybox  -->
+  <script type="text/javascript" src="../assets/javascripts/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="../assets/stylesheets/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="../assets/javascripts/jquery.fancybox.pack.js"></script>
+  <script src="../assets/javascripts/fancybox_simpleimage.js" type="text/javascript"></script>
+  <!-- Bootsrap --> 
+  <script src="../assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/javascripts/application.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="UGAb5QyVhlT+7W/EEOathk114a1bGFHgdlCubysNeEE=" name="csrf-token" />
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+  </style>
+  <script type = "text/javascript">
+  $(document).ready(function() {
+      /*
+       *  Simple image gallery. Uses default settings
+       */
+
+      $('.fancybox').fancybox();
+    });
+  </script>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="/" id="logo"></a>
+          <nav>
+            <ul class="nav pull-right">
+              <li><a href="about.html">Nuestra Empresa</a></li>
+              <li><a href="ingredientes.html">Ingredientes</a></li>
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="ingredientes" href="sanitizacion.html">Sanitización
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="sanitizacion.html#sonozaire">Sonozaire</a></li>
+                <li><a href="sanitizacion.html#cashido">Cashido</a></li>
+                <li><a href="sanitizacion.html#bacterias">Bacterias Fagocitarias</a></li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="servicios" href="alianzas.html">Alianzas Estratégicas
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li>
+                          <a href="http://www.vilher.com.mx" target="_blank">Empresas Vilher SA de CV</a>
+                      </li>
+                      <li>
+                          <a href="http://www.noverek.com.mx" target="_blank">Noverek SA de CV</a>
+                      </li>
+                      <li>
+                          <a href="http://www.gening.com.mx" target="_blank">Ingredientes especializados Gening</a>
+                      </li>
+                      <li>
+                          <a href="http://www.kapaingenieria.com" target="_blank">Kapa Ingeniería</a>
+                      </li>
+                      <li>
+                          <a href="http://www.ozono.mx" target="_blank">Ozono Internacional</a>
+                      </li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="servicios" href="servicios.html">Servicios
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li>
+                          <a href="servicios.html#curso1">Cursos de capacitación ( Capacitador externo acreditado antes la STPS)</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso2">Curso Buenas prácticas de manufactura</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso3">Curso Taller de elaboración de productos cárnicos</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso4">Curso Manejo adecuado de la Carne</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso5">Curso Taller de  Agentes Texturizantes</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso6">Curso Norma ISO22000</a>
+                      </li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="ingredientes" href="industrial.html">Industrias
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                          <a href="views/industrial.html">Alimentos</a>
+                            <ul class="dropdown-menu1">
+                              <li><a href="industrial.html#carnicos">Cárnicos</a></li>
+                              <li><a href="industrial.html#lacteos">Lácteos</a></li>
+                              <li><a href="industrial.html#panificacion">Panificación</a></li>
+                              <li><a href="industrial.html#confiteria">Confitería</a></li>
+                            </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                          <a href="industrial.html#industrial">Industrial</a>
+                            <ul class="dropdown-menu1">
+                              <li><a href="industrial.html#ecoone">Eco-One</a></li>
+                              <li><a href="industrial.html#antiestaticos">Antiestáticos</a></li>
+                            </ul>
+                      </li>
+                  </div>
+              <li><a href="datos.html">Protección de Datos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <!-- Contenido -->
+	<div class="container">
+		<div class="industrias">
+			<div class="alimentos">
+				<h1>Alimentos</h1>
+				<div class="alimento" id="carnicos">
+					<h2>Cárnicos</h2>
+					<!-- Facybox plugin for images -->
+
+					<div class="image">
+					<p>
+						<a class="fancybox" href="../images/carnicos.jpg" data-fancybox-group="gallery" title="Carnicos">
+							<img src="../images/carnicos.jpg" />
+						</a>
+					</p>
+					</div>
+
+					<div class="info">
+						<p>Sabores, proteínas de carne, de suero de leche, vegetales, así como carrageninas, conservadores y texturizantes.</p>
+					</div>
+				</div>
+				<div class="alimento" id="lacteos">
+					<h2>Lácteos</h2>
+					<div class="image">
+						<a class="fancybox" href="../images/lacteos.png" data-fancybox-group="gallery" title="Lácteos">
+							<img src="../images/lacteos.png" />
+						</a>
+					</div>
+					<div class="info">
+						<p>Contamos con ingredientes texturizantes y estabilizantes para la fabricación de cremas ácidas, dulces, quesos frescos o madurados, dulces de leche; así como estabilizante para leches reconstituidas y chocolatadas entre otros productos. Así mismo sistemas de conservación y sanitización.</p>
+					</div>
+				</div>
+				<div class="alimento" id="panificacion">
+					<h2>Panificación</h2>
+					<div class="image">
+						<a class="fancybox" href="../images/panificacion.jpg" data-fancybox-group="gallery" title="Panificación">
+							<img src="../images/panificacion.jpg">
+						</a>
+					</div>
+					<div class="info">
+						<p>Contamos con proteínas para estabilizar masas y batidos así como sistemas de hidrocoloides para la fabricación de rellenos pasteleros, mermelada y glacés.</p>
+					</div>
+				</div>
+				<div class="alimento" id="confiteria">
+					<h2>Confitería</h2>
+					<div class="image">
+						<a class="fancybox" href="../images/confiteria2.jpg" data-fancybox-group="gallery" title="Confitería">
+							<img src="../images/confiteria2.jpg">
+						</a>
+					</div>
+					<div class="info">
+						<p>Pectinas, gomas, sabores, maltodextrinas, dextrosa, y almidones modificados.</p>
+					</div>
+				</div>
+			</div>
+			<div class="industrial">
+				<h1>Industrial</h1>
+				<div class="alimento" id="ecoone">
+					<h2>Eco-One</h2>
+					<div class="image">
+						<iframe width="420" height="315" src="//www.youtube.com/embed/g4S1EfXfXQs" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="info">
+						<p>Aditivo para biodegradar plásticos.</p>
+					</div>
+				</div>
+				<div class="alimento" id="antiestatico">
+					<h2>Antiestáticos y Anti-niebla</h2>
+					<div class="image">
+						<a class="fancybox" href="../images/antiestaticos.png" data-fancybox-group="gallery" title="Antiestaticos">
+							<img src="../images/antiestaticos.png">
+						</a>
+					</div>
+					<div class="info">
+						<p>Alta eficiencia anti goteo para empaques de poliestireno en envases de alimentos.</p>
+					</div>
+				</div>
+		<!-- 		<div class="alimento" id="nanomaster">
+					<h2>Nanomaster</h2>
+					<div class="image">
+						<a class="fancybox" href="/images/nanomaster.jpg" data-fancybox-group="gallery" title="Nanomaster">
+							<img src="/images/nanomaster.jpg">
+						</a>
+					</div>
+					<div class="info">
+						<p>Reduce gramaje sin alterar propiedades físico-químicas.
+							Además de esto, aumenta barrera al oxígeno y vapor, y retarda punto de flama.</p>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+  <footer>
+    <div>Ingresa Mexico
+      <p>Email:ventas@ingresa.com
+      Tel. 81 1933 1169 . Nextel: 81 1805 1926</p>
+    </div>
+
+    <div class="bandera">
+      <div class="linkedin">
+          <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: es_ES
+          </script>
+          <script type="IN/FollowCompany" data-id="3349242" data-counter="none"></script>
+      </div>
+    </div>
+
+
+  </footer>
+</body>
+</html>

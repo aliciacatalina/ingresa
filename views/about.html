@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ingresa</title>
+  <meta charset="UTF-8">
+  <link href="../assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+  <link href="../assets/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <!-- Fancybox  -->
+  <script type="text/javascript" src="../assets/javascripts/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" href="../assets/stylesheets/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="../assets/javascripts/jquery.fancybox.pack.js"></script>
+  <script src="../assets/javascripts/fancybox_simpleimage.js" type="text/javascript"></script>
+  <!-- Bootsrap --> 
+  <script src="../assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/javascripts/application.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+  <meta content="UGAb5QyVhlT+7W/EEOathk114a1bGFHgdlCubysNeEE=" name="csrf-token" />
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+  </style>
+  <script type = "text/javascript">
+  $(document).ready(function() {
+      /*
+       *  Simple image gallery. Uses default settings
+       */
+
+      $('.fancybox').fancybox();
+    });
+  </script>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="/" id="logo"></a>
+          <nav>
+            <ul class="nav pull-right">
+              <li><a href="about.html">Nuestra Empresa</a></li>
+              <li><a href="ingredientes.html">Ingredientes</a></li>
+            <div class="dropdown">
+              <a class="dropdown-toggle" id="ingredientes" href="sanitizacion.html">Sanitización
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="sanitizacion.html#sonozaire">Sonozaire</a></li>
+                <li><a href="sanitizacion.html#cashido">Cashido</a></li>
+                <li><a href="sanitizacion.html#bacterias">Bacterias Fagocitarias</a></li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="servicios" href="alianzas.html">Alianzas Estratégicas
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li>
+                          <a href="http://www.vilher.com.mx" target="_blank">Empresas Vilher SA de CV</a>
+                      </li>
+                      <li>
+                          <a href="http://www.noverek.com.mx" target="_blank">Noverek SA de CV</a>
+                      </li>
+                      <li>
+                          <a href="http://www.gening.com.mx" target="_blank">Ingredientes especializados Gening</a>
+                      </li>
+                      <li>
+                          <a href="http://www.kapaingenieria.com" target="_blank">Kapa Ingeniería</a>
+                      </li>
+                      <li>
+                          <a href="http://www.ozono.mx" target="_blank">Ozono Internacional</a>
+                      </li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="servicios" href="servicios.html">Servicios
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li>
+                          <a href="servicios.html#curso1">Cursos de capacitación ( Capacitador externo acreditado antes la STPS)</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso2">Curso Buenas prácticas de manufactura</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso3">Curso Taller de elaboración de productos cárnicos</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso4">Curso Manejo adecuado de la Carne</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso5">Curso Taller de  Agentes Texturizantes</a>
+                      </li>
+                      <li>
+                          <a href="servicios.html#curso6">Curso Norma ISO22000</a>
+                      </li>
+                    </ul>
+              </div>
+              <div class="dropdown">
+              <a class="dropdown-toggle" id="ingredientes" href="industrial.html">Industrias
+              <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                          <a href="views/industrial.html">Alimentos</a>
+                            <ul class="dropdown-menu1">
+                              <li><a href="industrial.html#carnicos">Cárnicos</a></li>
+                              <li><a href="industrial.html#lacteos">Lácteos</a></li>
+                              <li><a href="industrial.html#panificacion">Panificación</a></li>
+                              <li><a href="industrial.html#confiteria">Confitería</a></li>
+                            </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                          <a href="industrial.html#industrial">Industrial</a>
+                            <ul class="dropdown-menu1">
+                              <li><a href="industrial.html#ecoone">Eco-One</a></li>
+                              <li><a href="industrial.html#antiestaticos">Antiestáticos</a></li>
+                            </ul>
+                      </li>
+                  </div>
+              <li><a href="datos.html">Protección de Datos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <!-- Contenido -->
+  <div class="container">
+    <div class="intro container" id="nuestraempresa">
+    <h1> Nuestra Empresa </h1>
+    <p>Con una experiencia de más de 20 años, contamos con formación e información en la industria de alimentos. Ubicados en Monterrey, atendemos regionalmente los Estados de Nuevo León, Coahuila, Tamaulipas y Chihuahua.</p>
+    <p>Ingredientes y Servicios en Alimentos, (Ingresa)., es una empresa orientada a satisfacer las necesidades de insumos, ingredientes y soporte técnico de nuestros clientes a través del conocimiento integral de nuestro mercado y sus requerimientos.</p>
+    <h2 class="nuestraempresa">VISIÓN</h2>
+    <p>Llegar a ser percibidos como un socio comercial de vanguardia que ofrezca las mejores opciones, al desarrollar y optimizar los productos de cada uno de nuestros clientes .</p>
+    <h2 class="nuestraempresa">POLÍTICA DE CALIDAD</h2>
+    <p>Ingredientes y Servicios en Alimentos, (Ingresa).  asume la política de proporcionar productos libres de defectos en tiempo y forma asegurando un abasto oportuno y que cumplan con las especificaciones de pureza e identidad que requieren  nuestros clientes.</p>
+    <p>Esta Política precisa que sus empleados participen en el continuo proceso de satisfacción que exige una meta de cero defectos como único nivel aceptable de desempeño. En nuestra Organización, nos comprometemos a cumplir con los marcos referenciales que la autoridad correspondiente determine o recomiende, llevando registros  de diferentes aspectos determinantes y/o relevantes  de calidad en nuestras materias primas, insumos y productos finales. </p>
+    <h2 class="nuestraempresa">VALORES</h2>
+    <p><span class="bold">Honestidad.</span>Creemos en principios éticos y morales que buscaremos  reflejar en cada actividad a realizar.</p>
+    <p><span class="bold">Vocación de Servicio al Cliente.</span>Creemos que sólo estando cerca de nuestros clientes, podremos entender sus requerimientos y necesidades, buscando siempre el brindar un servicio útil.</p>
+    <p><span class="bold">Superación.</span>Un aspecto fundamental de Calidad es hacer bien las cosas en la primera oportunidad a través de una capacitación constante.</p>
+    <p><span class="bold">Trabajo en equipo.</span>El interés común es fuente de unidad para trabajar coordinadamente y en armonía. Juntos hacemos un todo.</p>
+    <p><span class="bold">Seguridad.</span>Es preocupación de la Organización el evitar los posibles riesgos de trabajo por medio de la capacitación, y por la dotación de equipo adecuado a sus funciones y/o actividades. </p>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+  <div>Ingresa Mexico
+    <p>Email:ventas@ingresa.com
+    Tel. 81 1933 1169 . Nextel: 81 1805 1926</p>
+  </div>
+  <div class="bandera">
+  <div class="linkedin">
+          <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: es_ES
+          </script>
+          <script type="IN/FollowCompany" data-id="3349242" data-counter="none"></script>
+      </div></div>
+</footer>
+</body>
+</html>
